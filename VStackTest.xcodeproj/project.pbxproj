@@ -41,11 +41,11 @@
 		D6C2572F1DE2A6C3001C6BCE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C2572E1DE2A6C3001C6BCE /* GLKit.framework */; };
 		D6C257311DE2A6C9001C6BCE /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C257301DE2A6C9001C6BCE /* VideoToolbox.framework */; };
 		D6C257351DE2DE03001C6BCE /* VStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C257341DE2DE03001C6BCE /* VStack.framework */; };
+		D6F197941E9B447F0062E616 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F197931E9B447F0062E616 /* DemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF56D71C1D23AB2A0026B9E9 /* VStackTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VStackTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6C256DE1DE2A2B9001C6BCE /* VStackTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VStackTest.entitlements; sourceTree = "<group>"; };
 		D6C256E01DE2A4F2001C6BCE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D6C256E11DE2A4F2001C6BCE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D6C256E21DE2A4F2001C6BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +54,6 @@
 		D6C256E61DE2A4F2001C6BCE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6C256E71DE2A4F2001C6BCE /* ThirdPartyImplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyImplement.h; sourceTree = "<group>"; };
 		D6C256E81DE2A4F2001C6BCE /* ThirdPartyImplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyImplement.m; sourceTree = "<group>"; };
-		D6C256ED1DE2A4F2001C6BCE /* VStackTest.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = VStackTest.entitlements; sourceTree = "<group>"; };
 		D6C256EE1DE2A4F2001C6BCE /* VStackTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VStackTestController.h; sourceTree = "<group>"; };
 		D6C256EF1DE2A4F2001C6BCE /* VStackTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VStackTestController.m; sourceTree = "<group>"; };
 		D6C256FC1DE2A553001C6BCE /* VStackCall.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = VStackCall.a; sourceTree = "<group>"; };
@@ -84,6 +83,8 @@
 		D6C2572E1DE2A6C3001C6BCE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D6C257301DE2A6C9001C6BCE /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		D6C257341DE2DE03001C6BCE /* VStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VStack.framework; sourceTree = "<group>"; };
+		D6F197921E9B447F0062E616 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		D6F197931E9B447F0062E616 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +129,6 @@
 			children = (
 				D6C256FA1DE2A553001C6BCE /* VStack */,
 				D6C256DF1DE2A4F2001C6BCE /* VStackTest */,
-				D6C256DE1DE2A2B9001C6BCE /* VStackTest.entitlements */,
 				BF56D71D1D23AB2A0026B9E9 /* Products */,
 				D6C257011DE2A617001C6BCE /* Frameworks */,
 			);
@@ -153,9 +153,10 @@
 				D6C256E61DE2A4F2001C6BCE /* main.m */,
 				D6C256E71DE2A4F2001C6BCE /* ThirdPartyImplement.h */,
 				D6C256E81DE2A4F2001C6BCE /* ThirdPartyImplement.m */,
-				D6C256ED1DE2A4F2001C6BCE /* VStackTest.entitlements */,
 				D6C256EE1DE2A4F2001C6BCE /* VStackTestController.h */,
 				D6C256EF1DE2A4F2001C6BCE /* VStackTestController.m */,
+				D6F197921E9B447F0062E616 /* DemoViewController.h */,
+				D6F197931E9B447F0062E616 /* DemoViewController.m */,
 			);
 			path = VStackTest;
 			sourceTree = "<group>";
@@ -239,7 +240,7 @@
 								enabled = 1;
 							};
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -288,6 +289,7 @@
 				D6C256F51DE2A4F2001C6BCE /* ThirdPartyImplement.m in Sources */,
 				D6C256F91DE2A4F2001C6BCE /* VStackTestController.m in Sources */,
 				D6C256F41DE2A4F2001C6BCE /* main.m in Sources */,
+				D6F197941E9B447F0062E616 /* DemoViewController.m in Sources */,
 				D6C256F01DE2A4F2001C6BCE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,7 +394,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = VStackTest/VStackTest.entitlements;
 				DEVELOPMENT_TEAM = K62UXDC4YQ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -410,6 +411,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vstack.VStackTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -417,7 +419,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = VStackTest/VStackTest.entitlements;
 				DEVELOPMENT_TEAM = K62UXDC4YQ;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -435,6 +436,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vstack.VStackTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

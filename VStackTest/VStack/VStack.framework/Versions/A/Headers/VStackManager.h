@@ -1,6 +1,6 @@
 //
 //  VStackManager.h
-//  AzStack
+//  VStack
 //
 //  Created by Nguyen Van Phu on 7/18/16.
 //
@@ -30,11 +30,17 @@ typedef void (^ConnectWithCompletion)(NSString * authenticatedVStackUserID, NSEr
 - (UINavigationController *) vsRequestNavigationToPushChatController;
 @optional
 - (void) vsUpdateUnreadMessageCount: (int) unreadCount;
+- (void) viewFormUp;   // text box chat up
+- (void) viewFormDown; // text box chat down
 @end
 
 @protocol VSCallDelegate <NSObject>
 @optional
 - (void) vsJustFinishCall: (NSDictionary *) callInfo;
+- (void) onCallDurationWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId duration: (long) duration;
+- (void) onCallRingingWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+- (void) onCallAnswerWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
+- (void) onCallEndWithId: (int) callId ofVStackUserId: (NSString *) vStackUserId status: (int) status;
 @end
 
 @interface VStackManager : NSObject
@@ -66,6 +72,8 @@ typedef void (^ConnectWithCompletion)(NSString * authenticatedVStackUserID, NSEr
 - (void) settingMessageNotification:(NSDictionary *) dicSetting;
 
 - (void) initial;
+
+- (void) setUseSSL: (BOOL) useSSL;
 
 - (UIViewController *) chatWithUser: (NSString *) vStackUserId withUserInfo: (NSDictionary *) userInfo;
 
@@ -110,13 +118,16 @@ typedef void (^ConnectWithCompletion)(NSString * authenticatedVStackUserID, NSEr
 - (void) disconnectAndClearAllData;
 
 - (UIViewController*) getChatRooms;
-//
+
 - (UIViewController*) getChannelListController;
-//
 
 - (VStackUser *) getVSUser: (NSString *) vStackUserId;
 
 - (NSArray *) getRecentVSUsersList;
 
-
+/* 
+    set time limited for call
+    timeLimited is miliseconds
+*/
+- (void) setLimitedTime: (long) timeLimited;
 @end

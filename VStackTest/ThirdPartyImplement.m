@@ -108,6 +108,7 @@ static ThirdPartyImplement *ins;
 - (void) vsUpdateUnreadMessageCount:(int)unreadCount {
 }
 
+
 #pragma mark VStackCallDelegate
 
 - (void) vsJustFinishCall:(NSDictionary *)callInfo{
