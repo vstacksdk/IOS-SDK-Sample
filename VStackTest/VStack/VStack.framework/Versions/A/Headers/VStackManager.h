@@ -125,9 +125,9 @@ typedef void (^ConnectWithCompletion)(NSString * authenticatedVStackUserID, NSEr
 
 - (NSArray *) getRecentVSUsersList;
 
-/* 
-    set time limited for call
-    timeLimited is miliseconds
-*/
+/*
+ set time limited for call
+ timeLimited is miliseconds
+ */
 - (void) setLimitedTime: (long) timeLimited;
 @end

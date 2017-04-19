@@ -41,6 +41,7 @@
 		D6C2572F1DE2A6C3001C6BCE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C2572E1DE2A6C3001C6BCE /* GLKit.framework */; };
 		D6C257311DE2A6C9001C6BCE /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C257301DE2A6C9001C6BCE /* VideoToolbox.framework */; };
 		D6C257351DE2DE03001C6BCE /* VStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C257341DE2DE03001C6BCE /* VStack.framework */; };
+		D6DB2DBA1EA6FE5800299595 /* CallHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DB2DB91EA6FE5800299595 /* CallHistoryViewController.m */; };
 		D6F197941E9B447F0062E616 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F197931E9B447F0062E616 /* DemoViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		D6C2572E1DE2A6C3001C6BCE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D6C257301DE2A6C9001C6BCE /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		D6C257341DE2DE03001C6BCE /* VStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VStack.framework; sourceTree = "<group>"; };
+		D6DB2DB81EA6FE5800299595 /* CallHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallHistoryViewController.h; sourceTree = "<group>"; };
+		D6DB2DB91EA6FE5800299595 /* CallHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallHistoryViewController.m; sourceTree = "<group>"; };
 		D6F197921E9B447F0062E616 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		D6F197931E9B447F0062E616 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +160,8 @@
 				D6C256EF1DE2A4F2001C6BCE /* VStackTestController.m */,
 				D6F197921E9B447F0062E616 /* DemoViewController.h */,
 				D6F197931E9B447F0062E616 /* DemoViewController.m */,
+				D6DB2DB81EA6FE5800299595 /* CallHistoryViewController.h */,
+				D6DB2DB91EA6FE5800299595 /* CallHistoryViewController.m */,
 			);
 			path = VStackTest;
 			sourceTree = "<group>";
@@ -230,7 +235,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Nguyen Van Phu";
+				ORGANIZATIONNAME = VHT;
 				TargetAttributes = {
 					BF56D71B1D23AB2A0026B9E9 = {
 						CreatedOnToolsVersion = 7.3;
@@ -291,6 +296,7 @@
 				D6C256F41DE2A4F2001C6BCE /* main.m in Sources */,
 				D6F197941E9B447F0062E616 /* DemoViewController.m in Sources */,
 				D6C256F01DE2A4F2001C6BCE /* AppDelegate.m in Sources */,
+				D6DB2DBA1EA6FE5800299595 /* CallHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

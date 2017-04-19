@@ -6,6 +6,7 @@
 #import "VStackTestController.h"
 #import "ThirdPartyImplement.h"
 #import "DemoViewController.h"
+#import "CallHistoryViewController.h"
 
 @implementation VStackTestController
 
@@ -13,7 +14,7 @@
     [super viewDidLoad];
 
     //    self.title = @"VStack Test";
-    self.tableCells = @[@"Go to Demo fragment", @"Chat with user2", @"Group chat", @"Create Group", @"Chat History",@"Call user2", @"Video call user2"];
+    self.tableCells = @[@"Go to Demo fragment", @"Chat with user2", @"Group chat", @"Create Group", @"Chat History",@"Call user2", @"Video call user2", @"Call History"];
 
     [ThirdPartyImplement instance].navForChatController = self.navigationController;
 
@@ -62,7 +63,9 @@
     } else if (indexPath.row == 6){// video call user2
         [[VStackManager instance] callVideoWithUser:@"user2" withUserInfo:@{@"name": @"User 2"}];
 
-
+    }else if (indexPath.row == 7){
+        CallHistoryViewController *callHistoryVC = [[CallHistoryViewController alloc] init];
+        [self.navigationController pushViewController:callHistoryVC animated:YES];
     }
 }
 
